@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard {
+  position: relative;
+  min-width: 400px;
+  min-height: 300px;
+  background-color: #4f4b48;
+  padding: 0.6em;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+}
+
+.keyboard-key {
+  cursor: pointer;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.4em;
+  padding: 0.1em;
+  font-size: 0.7em;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #FFF, #ccc4c4);
+  box-shadow: inset -8px 0 8px rgba(255, 255, 255, 0.15), inset 0 -8px 8px rgba(255, 255, 255, 0.25), 0 0 0 2px rgba(255, 255, 255, 0.75), 10px 20px 25px rgba(255, 255, 255, 0.4);
+}
+
+.keyboard-key .key-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ccd5d9;
+  width: 3.2em;
+  height: 3.5em;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2em;
+  background: linear-gradient(90deg, #101010, #1f1f1f);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15), inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75), 10px 20px 25px rgba(0, 0, 0, 0.4);
+}
+
+.text-sm {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+}
+
+.space-key {
+  margin-right: 5em;
+}
+
+.space-key-mdm {
+  margin-right: 2.9em;
+}
+
+.key-tab {
+  width: 5.5em;
+}
+.key-tab > .key-box {
+  width: 4.9em;
+}
+
+.key-delete {
+  width: 8.9em;
+}
+.key-delete > .key-box {
+  width: 7.9em;
+}
+.key-delete > .key-box > .box-top {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
