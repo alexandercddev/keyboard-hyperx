@@ -56,6 +56,19 @@ body {
     inset 0 -8px 8px rgba(255, 255, 255, 0.25),
     0 0 0 2px rgba(255, 255, 255, 0.75),
     10px 20px 25px rgba(255, 255, 255, 0.4); 
+
+    &.key-color {
+        transition: 0.5s ease all; 
+        background: linear-gradient(90deg, rgba(25, 255, 255, 0.75), rgba(25, 255, 255, 0.15));
+        box-shadow: inset -8px 0 8px rgba(25, 255, 255, 0.15), 
+                inset 0 -8px 8px rgba(55, 255, 255, 0.25), 
+                0 0 0 2px rgba(25, 255, 255, 0.75), 
+                10px 20px 25px rgba(55, 255, 255, 0.4);
+
+        &>.key-box {
+            color: rgba(25, 255, 255, 0.75);
+        }
+    }
 }
 .keyboard-key .key-box {
     display: flex;
@@ -72,6 +85,8 @@ body {
     inset 0 -8px 8px rgba(0, 0, 0, 0.25),
     0 0 0 2px rgba(0, 0, 0, 0.75),
     10px 20px 25px rgba(0, 0, 0, 0.4); 
+
+    
 }
 .text-sm {
     display: flex;
@@ -84,10 +99,16 @@ body {
 .space-key-mdm {
     margin-right: 2.9em;
 }
+.space-key-lg {
+    margin-right: 7.9em;
+}
 .key-tab {
-    width: 5.5em;
+    width: 6.5em;
     &>.key-box {
-        width: 4.9em;
+        width: 5.7em;
+        &>.box-top {
+            font-size: 1.5em;
+        }
     }
 }
 .key-delete {
@@ -95,7 +116,83 @@ body {
     &>.key-box {
         width: 7.9em;
         &>.box-top {
-            font-size: 2em;
+            font-size: 1.5em;
+        }
+    }
+} 
+.key-intro {
+    width: 6.5em;  
+    /*clip-path: polygon( 0 0, 
+                        100% 0, 
+                        100% 100%,  
+                        30% 100%, 
+                        30% 50%, 
+                        0% 50%); */
+    &>.key-box {
+        width: 5.5em;
+        justify-content: center; 
+    }
+} 
+.key-bloq-mayus {
+    width: 8.7em;
+    &>.key-box {
+        width: 7.8em;
+        &>.box-top {
+            font-size: 1.5em;
         }
     }
 }
+.key-github {  
+    &>.key-box {  
+        justify-content: center;
+        &>.box-top {
+            font-size: 1.5em;
+        }
+    }
+}
+.key-md {
+    width: 5.2em;
+    &>.key-box {
+        width: 4.3em;  
+    }
+}
+.key-shif-1 { 
+    width: 6.7em;
+    &>.key-box {
+        width: 5.8em;  
+        &>.box-top {
+            font-size: 1.5em;
+        }
+    } 
+}
+.key-shif-2 {
+    width: 10.7em;
+    &>.key-box {
+        width: 9.8em;  
+        &>.box-top {
+            font-size: 1.5em;
+        }
+    }
+}
+.key-windows {
+    &>.key-box {   
+        &>.box-top {
+            font-size: 1.5em;
+        }
+    }
+}
+.key-space { 
+    width: 29em;
+    &>.key-box {
+        width: 28.2em;
+        &>.box-top {
+            font-size: 1.5em;
+        }
+    } 
+}
+.margin-top {
+    margin-top: 0.7em;
+}  
+.translate-y {
+    transform: translateY(-3.4em);
+}  
